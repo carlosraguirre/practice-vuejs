@@ -8,7 +8,7 @@ var app = new Vue({
       number1: 0,
       number2: 0,
       number3: 0,
-      sumTotal: null
+      sumTotal: null,
       productTotal: null
     };
   },
