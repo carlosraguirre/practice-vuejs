@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      .disabled {
+        color: LightGray;
+      }
+
+      .red {
+        background-color: red;
+      }
+    </style>
+
     <meta charset="UTF-8" />
     <title>Practice Vue.js</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -14,6 +24,14 @@
       <button v-on:click="goodbye">Click for a Message Back</button>
       <p>{{thirdMessage}}</p>
       <p>How Are You Doing: <input type="text" v-model="thirdMessage" /></p>
+
+      <div>
+        <p v-if="showHiddenInfo">Here's a message for you</p>
+        <button v-on:click="toggle">Toggle info</button>
+      </div>
+
+      <p v-bind:class="{disabled: greyOutInfo, red: true}">Here is your text</p>
+      <button v-on:click="greyOut">Grey out the text</button>
     </div>
   </body>
 </html>
