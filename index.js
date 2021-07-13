@@ -10,7 +10,8 @@ var app = new Vue({
   },
   methods: {
     goodbye: function () {
-      return subMessage = "Goodbye!";
+      console.log("Goodbye!");
+      this.subMessage = "Goodbye!";
     }
   }
 });
