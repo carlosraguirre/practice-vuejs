@@ -8,7 +8,9 @@ var app = new Vue({
       subMessage: "Hi again!",
       thirdMessage: "Hi.",
       showHiddenInfo: false,
-      greyOutInfo: false
+      greyOutInfo: false,
+      movies: ["Jurassic Park the Best", "Jurassic World Kinda Bad", "Jurassic World 2 Much Worse"],
+      recentMovies: ["Godzilla vs. Kong", "Minari", "A Quiet Place Part II"]
     };
   },
   methods: {

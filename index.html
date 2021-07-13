@@ -32,6 +32,20 @@
 
       <p v-bind:class="{disabled: greyOutInfo, red: true}">Here is your text</p>
       <button v-on:click="greyOut">Grey out the text</button>
+
+      <br />
+      <br />
+      <br />
+      <hr />
+      <hr />
+      <br />
+
+      <div v-for="movie in movies">{{ movie }}</div>
+
+      <br />
+      <hr />
+      <hr />
+      <br />
     </div>
   </body>
 </html>
