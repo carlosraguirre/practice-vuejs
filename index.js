@@ -10,7 +10,8 @@ var app = new Vue({
       showHiddenInfo: false,
       greyOutInfo: false,
       movies: ["Jurassic Park the Best", "Jurassic World Kinda Bad", "Jurassic World 2 Much Worse"],
-      recentMovies: ["Godzilla vs. Kong", "Minari", "A Quiet Place Part II"]
+      recentMovies: ["Godzilla vs. Kong", "Minari", "A Quiet Place Part II"],
+      newMovies: ""
     };
   },
   methods: {
@@ -25,6 +26,12 @@ var app = new Vue({
     greyOut: function () {
       console.log('greying out text');
       this.greyOutInfo = ! this.greyOutInfo;
+    },
+    addMovie: function () {
+      console.log("adding movie...");
+      console.log(this.newMovies);
+      this.movies.push(this.newMovies);
+      this.newMovies = "";
     }
   }
 });

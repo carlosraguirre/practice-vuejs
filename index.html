@@ -40,7 +40,15 @@
       <hr />
       <br />
 
-      <div v-for="movie in movies">{{ movie }}</div>
+      <div v-for="movie in movies">
+        <p>{{ movie }}</p>
+      </div>
+
+      <p>
+        <input type="text" v-model="newMovies" />
+        <button v-on:click="addMovie()">Add Movie</button>
+      </p>
+      <hr />
 
       <br />
       <hr />
